@@ -8,7 +8,7 @@ app = Flask("demo")
 
 @app.get("/")
 def hello():
-    return "hello world"
+    return "hello world!"
 
 if __name__ == "__main__":
     app.run(host="HOST", port=PORT)
