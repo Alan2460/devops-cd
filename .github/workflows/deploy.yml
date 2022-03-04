@@ -12,6 +12,8 @@ jobs:
         run: echo "Salutation"
       - name: "pull du git"
         uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
       - name: "installation de NodeJS version 14"
         uses: actions/setup-node@v2
         with: 
@@ -27,4 +29,5 @@ jobs:
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           branch: main
+      - run: git push --tags
 # test
