@@ -31,3 +31,9 @@ jobs:
           branch: main
       - run: git push --tags
 # test
+
+delivery:
+  name: "build et push image sur acr"
+  runs-on: ubuntu-latest
+  steps:
+    - run: echo "hello"
